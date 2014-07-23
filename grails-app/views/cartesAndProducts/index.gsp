@@ -32,7 +32,7 @@
 				<div class="row-fluid">
 					<div class="span12">		 
 						<!-- BEGIN PAGE TITLE & BREADCRUMB-->
-						<h3 class="page-title"> 
+						<h3 class="page-title">
 							Cartas y Productos
 						</h3>
 						<ul class="breadcrumb">
