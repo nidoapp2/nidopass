@@ -101,7 +101,7 @@ environments {
     }
 	
 	
-	test { 
+	test {
 		grails.logging.jul.usebridge = true
 		//grails.serverURL = "http://nidopub-eu-test.nidoapp.eu.cloudbees.net"
 		grails.serverURL = "http://212.97.161.15/nidopass-test"
