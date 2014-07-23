@@ -101,8 +101,8 @@
 				
 				<!-- TEST Y PROD -->
 				<script>
-					$('#table_pubs').load('/pub/listAssociationSuperAdmin/${association?.id}');
-					$('#table_pubs_no_association').load('/pub/listNoAssociationSuperAdmin/${association?.id}?provinceId=${params.provinceId}');
+					$('#table_pubs').load(${grailsApplication.config.grails.serverURL + '/pub/listAssociationSuperAdmin/'+association?.id});
+					$('#table_pubs_no_association').load(${grailsApplication.config.grails.serverURL + '/pub/listNoAssociationSuperAdmin/'+association?.id+'?provinceId='+params.provinceId});
 				</script>
 				<!-- FIN TEST Y PROD -->
 				

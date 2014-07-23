@@ -41,7 +41,7 @@
 							
 							<!-- TEST Y PROD -->
 							<script>
-								$('#table_translations_${i18nItemInstance.id}').load('/i18nTranslation/list', {id_i18nItem:${i18nItemInstance.id}});
+								$('#table_translations_${i18nItemInstance.id}').load(${grailsApplication.config.grails.serverURL + '/i18nTranslation/list'}, {id_i18nItem:${i18nItemInstance.id}});
 							</script>
 							<!-- FIN TEST Y PROD -->
 						

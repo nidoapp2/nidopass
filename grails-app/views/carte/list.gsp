@@ -44,7 +44,7 @@
 							
 							<!--TEST Y PROD-->
 							<script>
-								$('#table_carteSections_${carteInstance.id}').load('/carteSection/list', {id_carte:${carteInstance.id}});
+								$('#table_carteSections_${carteInstance.id}').load(${grailsApplication.config.grails.serverURL + '/carteSection/list'}, {id_carte:${carteInstance.id}});
 							</script>
 							<!-- FIN TEST Y PROD -->
 						

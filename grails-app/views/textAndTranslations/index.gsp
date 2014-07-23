@@ -74,7 +74,7 @@
 				
 				<!-- TEST Y PROD -->
 				<script>
-					$('#table_texts').load('/i18nItem/list', {id_pub:${Pub.findByUri(params.id).id}});
+					$('#table_texts').load(${grailsApplication.config.grails.serverURL + '/i18nItem/list'}, {id_pub:${Pub.findByUri(params.id).id}});
 				</script>
 				<!-- FIN TEST Y PROD -->
 				

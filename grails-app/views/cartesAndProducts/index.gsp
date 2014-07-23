@@ -74,7 +74,7 @@
 				
 				<!-- TEST Y PROD -->
 				<script>
-					$('#table_cartes').load('/carte/list', {id_pub:${Pub.findByUri(params.id).id}});
+					$('#table_cartes').load(${grailsApplication.config.grails.serverURL + '/carte/list'}, {id_pub:${Pub.findByUri(params.id).id}});
 				</script>
 				<!-- FIN TEST Y PROD -->
 				
@@ -107,7 +107,7 @@
 				
 				<!-- TEST Y PROD -->
 				<script>
-					$('#table_products').load('/product/list', {id_pub:${Pub.findByUri(params.id).id}});
+					$('#table_products').load(${grailsApplication.config.grails.serverURL + '/product/list'}, {id_pub:${Pub.findByUri(params.id).id}});
 				</script>
 				<!-- FIN TEST Y PROD -->
 				
