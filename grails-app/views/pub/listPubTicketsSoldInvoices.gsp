@@ -32,9 +32,9 @@
 		
 		<!-- TEST Y PROD -->
 		if (typeof(param1)=='string' && typeof(param2)=='string') {
-			$('#table_tickets_sold').load(${grailsApplication.config.grails.serverURL + '/pubEvent/listPubTicketsSoldByDates'}, {id_pub:'${pub.uri}', dateInvoiceFrom: param1,  dateInvoiceTo: param2});
+			$('#table_tickets_sold').load('${grailsApplication.config.grails.serverURL + '/pubEvent/listPubTicketsSoldByDates'}', {id_pub:'${pub.uri}', dateInvoiceFrom: param1,  dateInvoiceTo: param2});
 		} else {
-			$('#table_tickets_sold').load(${grailsApplication.config.grails.serverURL + '/pubEvent/listPubTicketsSoldByDates'}, {id_pub:'${pub.uri}', dateInvoiceFrom: $(param1).val(),  dateInvoiceTo: $(param2).val()});
+			$('#table_tickets_sold').load('${grailsApplication.config.grails.serverURL + '/pubEvent/listPubTicketsSoldByDates'}', {id_pub:'${pub.uri}', dateInvoiceFrom: $(param1).val(),  dateInvoiceTo: $(param2).val()});
 		}
 		<!-- FIN TEST Y PROD -->
 		

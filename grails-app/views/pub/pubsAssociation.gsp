@@ -101,8 +101,8 @@
 				
 				<!-- TEST Y PROD -->
 				<script>
-					$('#table_pubs').load(${grailsApplication.config.grails.serverURL + '/pub/list'});
-					$('#table_pubs_no_association').load(${grailsApplication.config.grails.serverURL + '/pub/listNoAssociation'});
+					$('#table_pubs').load('${grailsApplication.config.grails.serverURL + '/pub/list'}');
+					$('#table_pubs_no_association').load('${grailsApplication.config.grails.serverURL + '/pub/listNoAssociation'}');
 				</script>
 				<!-- FIN TEST Y PROD -->
 				
